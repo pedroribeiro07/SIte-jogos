@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Builds e Tier Lists de Jogos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0e0e0e;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #00ffff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #2e2e2e;
+    }
+
+    nav button {
+      background: none;
+      border: none;
+      padding: 15px 25px;
+      cursor: pointer;
+      color: #fff;
+      font-size: 1em;
+      transition: background 0.3s;
+    }
+
+    nav button:hover, nav button.active {
+      background-color: #00ffff;
+      color: #000;
+    }
+
+    .content {
+      padding: 20px;
+      display: none;
+    }
+
+    .content.active {
+      display: block;
+    }
+
+    h2 {
+      color: #00ffff;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      background: #1e1e1e;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    /* Centralizando e ajustando o tamanho da imagem */
+/* Centralizando a imagem na página e ajustando as bordas arredondadas */
+.tier-list-image {
+  text-align: center;  /* Centraliza o conteúdo da div */
+  margin-top: 20px;     /* Espaço superior */
+  display: block;       /* Garante que a imagem seja tratada como bloco */
+  margin-left: auto;
+  margin-right: auto;   /* Centraliza horizontalmente */
+}
+
+.tier-list-image img {
+  width: 80%;           /* Aumenta o tamanho da imagem para 80% da largura disponível */
+  max-width: 1000px;    /* Limita a largura máxima da imagem */
+  height: auto;         /* Mantém a proporção da imagem */
+  border-radius: 20px;  /* Bordas arredondadas */
+}
+    
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Builds, Tiers e Acessórios</h1>
+</header>
+
+<nav>
+  <button class="tab-button active" data-tab="valorant">Valorant</button>
+  <button class="tab-button" data-tab="cs2">CS2</button>
+  <button class="tab-button" data-tab="lol">League of Legends</button>
+</nav>
+
+<main>
+  <section id="valorant" class="content active">
+    <h2>Builds de Valorant</h2>
+    <ul>
+      <li>Agente Jett - Build de Mobilidade Rápida</li>
+      <li>Agente Sova - Setup de Informações</li>
+    </ul>
+
+    <h2>Tier List</h2>
+<ul>
+  <li>S Tier: Tejo, Raze, Yoru, Sage, Vise, Astra</li>
+  <li>A Tier: Breach, Sova, Gekko, Iso, Deadlock, Cypher, Clove</li>
+  <li>B Tier: Fade, Neon, Pheonix, Reyna, Viper</li>
+  <li>C Tier: Killjoy, Skye, Chamber, Kayo, Harbor</li>
+</ul>
+
+<!-- Div para centralizar e ajustar a imagem -->
+<div class="tier-list-image">
+  <img src="image tier list valorant.jpg" alt="Tier List de Valorant">
+</div>
+
+      <li>Mouse recomendado: Logitech G Pro X Superlight</li>
+      <li>Headset: HyperX Cloud II</li>
+    </ul>
+  </section>
+
+  <section id="cs2" class="content">
+    <h2>Builds de CS2</h2>
+    <ul>
+      <li>CT - Compra econômica: Five-Seven + Smoke</li>
+      <li>Terrorista - Full Buy: AK-47 + Molotov + Flash</li>
+    </ul>
+
+    <h2>Tier List de Mapas</h2>
+    <ul>
+      <li>S Tier: Mirage, Inferno</li>
+      <li>A Tier: Nuke, Overpass</li>
+    </ul>
+
+    <h2>Acessórios</h2>
+    <ul>
+      <li>Mouse: Zowie EC2-C</li>
+      <li>Mousepad: SteelSeries QcK+</li>
+    </ul>
+  </section>
+
+  <section id="lol" class="content">
+    <h2>Builds de League of Legends</h2>
+    <ul>
+      <li>ADC Jinx - Canhão Fumegante, Mata-Cráquens</li>
+      <li>Mid Ahri - Eco de Luden, Chama Sombria</li>
+    </ul>
+
+    <h2>Tier List de Campeões</h2>
+    <ul>
+      <li>S Tier: Ahri, K'Sante</li>
+      <li>A Tier: Jinx, Leona</li>
+    </ul>
+
+    <h2>Acessórios</h2>
+    <ul>
+      <li>Teclado: Razer Huntsman Mini</li>
+      <li>Monitor: 144Hz para melhor desempenho</li>
+    </ul>
+  </section>
+</main>
+
+<script>
+  const buttons = document.querySelectorAll('.tab-button');
+  const contents = document.querySelectorAll('.content');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      buttons.forEach(btn => btn.classList.remove('active'));
+      contents.forEach(content => content.classList.remove('active'));
+
+      button.classList.add('active');
+      document.getElementById(button.getAttribute('data-tab')).classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>
