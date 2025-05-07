@@ -14,7 +14,7 @@
     }
 
     header {
-      background-color: #1e1e1e;
+      background: linear-gradient(200deg, white, #EBF5FF);
       padding: 20px;
       text-align: center;
     }
@@ -28,7 +28,8 @@
     nav {
       display: flex;
       justify-content: center;
-      background-color: #2e2e2e;
+      background: linear-gradient(315deg, white, #EBF5FF);
+  
     }
 
     nav button {
@@ -36,7 +37,7 @@
       border: none;
       padding: 15px 25px;
       cursor: pointer;
-      color: #fff;
+      color: #000000;
       font-size: 1em;
       transition: background 0.3s;
     }
@@ -56,7 +57,7 @@
     }
 
     h2 {
-      color: #00ffff;
+      color: #000000;
     }
 
     ul {
@@ -65,27 +66,36 @@
     }
 
     ul li {
-      background: #1e1e1e;
+      background: linear-gradient(315deg, #2e2e2e, #2e2e2e81, #2e2e2e0e); 
       margin: 8px 0;
       padding: 10px;
       border-radius: 5px;
     }
-    /* Centralizando e ajustando o tamanho da imagem */
-/* Centralizando a imagem na página e ajustando as bordas arredondadas */
-.tier-list-image {
-  text-align: center;  /* Centraliza o conteúdo da div */
-  margin-top: 20px;     /* Espaço superior */
-  display: block;       /* Garante que a imagem seja tratada como bloco */
-  margin-left: auto;
-  margin-right: auto;   /* Centraliza horizontalmente */
+    #valorant {
+      background: linear-gradient(315deg, white, #EBF5FF);
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.tier-list-image img {
-  width: 80%;           /* Aumenta o tamanho da imagem para 80% da largura disponível */
+
+
+ img {
+  width: 40%;           /* Aumenta o tamanho da imagem para 80% da largura disponível */
   max-width: 1000px;    /* Limita a largura máxima da imagem */
   height: auto;         /* Mantém a proporção da imagem */
-  border-radius: 20px;  /* Bordas arredondadas */
+  border-radius: 30px;  /* Bordas arredondadas */
 }
+
+h2 {
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+}
+
+li {
+  color: #000;
+}
+
+
     
 
   </style>
@@ -104,16 +114,23 @@
 
 <main>
   <section id="valorant" class="content active">
-    <h2>Builds de Valorant</h2>
+    <h2>Melhores Comps para cada mapa</h2>
     <ul>
-      <li>Agente Jett - Build de Mobilidade Rápida</li>
-      <li>Agente Sova - Setup de Informações</li>
+      <h1>ASCENT</h1>
+      <li>Jett, Sova, Kayo, Killjoy, Omen</li>
+      <img src="acent valorant.jpg" alt="Mapa ascent">
+      <h1>BIND</h1>
+      <li> Raze, Brim, Viper, Tejo, Fade</li>
+      <img src="bind valorant.jpg" alt="Mapa bind">
+      <h1>HEAVEN</h1>
+      <li>Sova, Cypher, Jett, Omen, Breach</li>
+      <img src="heaven valorant.jpg" alt="Mapa heaven">
     </ul>
 
     <h2>Tier List</h2>
 <ul>
   <li>S Tier: Tejo, Raze, Yoru, Sage, Vise, Astra</li>
-  <li>A Tier: Breach, Sova, Gekko, Iso, Deadlock, Cypher, Clove</li>
+  <li>A Tier: Breach, Sova, Gekko, Iso, Deadlock, Cypher, Clove, Omen</li>
   <li>B Tier: Fade, Neon, Pheonix, Reyna, Viper</li>
   <li>C Tier: Killjoy, Skye, Chamber, Kayo, Harbor</li>
 </ul>
