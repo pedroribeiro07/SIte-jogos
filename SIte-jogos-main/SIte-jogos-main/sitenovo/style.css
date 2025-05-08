@@ -1,0 +1,61 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background: #1e1e2f;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background: #2d2d44;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  /* Container principal do campeão */
+  .champion-container {
+    background: #2a2a3b;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Seções de estatísticas e builds */
+  .stats, .build, .runes {
+    margin-top: 10px;
+  }
+  
+  /* Imagens dos itens */
+  .build img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  /* Rodapé */
+  .footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  /* Listas de runas */
+  .runes ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .runes li::before {
+    content: "• ";
+    color: #58a6ff;
+    margin-right: 5px;
+  }
+  
